@@ -1,0 +1,15 @@
+h1 {
+	color: pink;
+	text-align: center;
+}
+
+p {
+	font-size:100%;
+}
+
+#intro {
+	background-color: pink;
+}
+
+.first {font-size: 200%;
+}
