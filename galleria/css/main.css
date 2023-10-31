@@ -223,50 +223,83 @@ header h1 {
 /****************Tänne tulee kaikki oma koodi**********/
 
 ul {
-display: flex; /* Tällä koko ul- jutulla saa kuvat vierekkäin*/
-flex-wrap: wrap;
-justify-content: flex-start;
-flex-direction: row;
-padding-inline-start: 0px;
+    display: flex;  /* Tällä koko ul- jutulla saa kuvat vierekkäin*/
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-inline-start: 0px;
+    
+}
 
+ 
+
+figure { 
+    position: relative; /*Tämänavulla kuvateksti tulee kuvan päälle*/
+    width: 86.5%; /*Tämän avulla kuvan päällä olevan tekstin tausta on tasan kuvan mittainen, eikä liian kapea tai leveä*/
+    margin: 10; /*Tällä oli kans joku muutos, mutta en nyt muista mihin vaikutti*/
 }
-figure {
-position: relative; /*Tämänavulla kuvateksti tulee kuvan päälle*/
-width: 86.5%; /*Tämän avulla kuvan päällä olevan tekstin tausta on tasan kuvan mittainen, eikä liian kapea tai leveä*/
-margin: 10; /*Tällä oli kans joku muutos, mutta en nyt muista mihin vaikutti*/
-}
+
+ 
+
 p {
-text-indent: 15px; /* tämän avulla sivupalkin teksti alkaa hieman enemmän oikealta, jos lukua suurentaa menee enemmän oikealle */
+    text-indent: 15px; /* tämän avulla sivupalkin teksti alkaa hieman enemmän oikealta, jos lukua suurentaa menee enemmän oikealle */
 }
+
+ 
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0.5); /* tämä on himmeä taustaväri kuvan päällä olevalle tekstille*/
+    position: absolute; /*Tämän avulla teksti menee kuvan sisään*/
+    top: 0px; /*Tämän avulla otsikko alkaa kuvan ihan yläreunasta*/
+    width: 100%;
+    color: white;
+    left: 0px;
+}
+
+ 
+
 h3 {
-background-color: rgba(0,0,0,.5); /* tämä on himmeä taustaväri kuvan päällä olevalle tekstille*/
-position: absolute; /*Tämän avulla teksti menee kuvan sisään*/
-top: -19px; /*Tämän avulla otsikko alkaa kuvan ihan yläreunasta*/
-width: 100%;
-color: white;
-text-indent: 10px; /*Tämän avulla kuvan päällä oleva teksti alkaa hieman enemmän oikealta, jos lukua pienentää menee ihan vasempaan reunaan, jos suurentaa liikkuu enemmän oikealle*/
+    margin: 5px 10px;
 }
-li {
-list-style-type: none; /* Tällä saa listan pallerot pois*/
-height: 232px; /*Tällä ja alemmalla width :llä saatiin kuvien välistä väliä pienemmäksi*/
-width: 232px;
+
+ 
+
+li    {
+    list-style-type: none;  /* Tällä saa listan pallerot pois*/
+    height: 232px; /*Tällä ja alemmalla width :llä saatiin kuvien välistä väliä pienemmäksi*/
+    width: 232px;
 }
+
+ 
+
 
 body.secondary-color { /*tällä muotoillaan koko sivu, jotta aside menee sivulle*/
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+ 
+
 header { /*otsikko leveeksi, niin pysyy ylhäällä*/
-width: 100%;
+    width: 100%;
 }
+
+ 
+
 main.primary-color { /*harmaa alue leveys*/
-width: 80%;
+    width: 80%;
 }
+
+ 
+
 aside.default { /*sinisen sivupalkin leveys*/
-width: 20%;
+    width: 20%;
 }
+
+ 
+
 @media only screen and (max-width: 600px) { /*Pienemmässä näytössä sininen sivupalkki menee alimmaksi*/
-header, main.primary-color, aside.default { width: 100%; }
-
-
-}   
+    header, main.primary-color, aside.default { width: 100%; }
+    
+    
+}    
