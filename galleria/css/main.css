@@ -225,9 +225,10 @@ header h1 {
 ul {
     display: flex;  /* Tällä koko ul- jutulla saa kuvat vierekkäin*/
     flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: row;
-    padding-inline-start: 0px;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    padding-right: 0px;
     
 }
 
@@ -235,8 +236,7 @@ ul {
 
 figure { 
     position: relative; /*Tämänavulla kuvateksti tulee kuvan päälle*/
-    width: 86.5%; /*Tämän avulla kuvan päällä olevan tekstin tausta on tasan kuvan mittainen, eikä liian kapea tai leveä*/
-    margin: 10; /*Tällä oli kans joku muutos, mutta en nyt muista mihin vaikutti*/
+    margin: 15px; /*kuvien ympäröivä tila, tätä muokkaamalla kuvat saa lähemmäksi toisiaan*/
 }
 
  
@@ -266,14 +266,12 @@ h3 {
 
 li    {
     list-style-type: none;  /* Tällä saa listan pallerot pois*/
-    height: 232px; /*Tällä ja alemmalla width :llä saatiin kuvien välistä väliä pienemmäksi*/
-    width: 232px;
 }
 
  
 
 
-body.secondary-color { /*tällä muotoillaan koko sivu, jotta aside menee sivulle*/
+body { /*tällä muotoillaan koko sivu, jotta aside menee sivulle*/
     display: flex;
     flex-wrap: wrap;
 }
@@ -286,20 +284,20 @@ header { /*otsikko leveeksi, niin pysyy ylhäällä*/
 
  
 
-main.primary-color { /*harmaa alue leveys*/
+main { /*harmaa alue leveys*/
     width: 80%;
 }
 
  
 
-aside.default { /*sinisen sivupalkin leveys*/
+aside { /*sinisen sivupalkin leveys*/
     width: 20%;
 }
 
  
 
 @media only screen and (max-width: 600px) { /*Pienemmässä näytössä sininen sivupalkki menee alimmaksi*/
-    header, main.primary-color, aside.default { width: 100%; }
+    header, main, aside { width: 100%; }
     
     
-}    
+}   
