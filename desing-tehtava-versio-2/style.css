@@ -76,6 +76,7 @@ header h1 {
 
 /*Menu*/
 #main-menu { 
+
 	list-style-type: none; 
 	
 	
@@ -149,7 +150,7 @@ header h1 {
 	*/
 	
 
-	color: white; 
+	color: #7C09B1; 
 	background: #DAA6F2;
 	padding: 5px, 10px;
 	border-radius: 4px;
@@ -166,7 +167,7 @@ header h1 {
 	kun kursori on sen päällä. Muuta paremmaksi */
 	
 	color: #DAA6F2;
-	Background: white;
+	Background: #7C09B1;
 	
 	
 	
@@ -212,10 +213,10 @@ article {
 	margin tai padding).*/
 
 border-radius: 4px;
-BACKGROUND: white;
+BACKGROUND: #E8E5DC;
 padding-bottom: 50px;
 position: relative;
-padding: 50XP;
+padding: 50px;
 	MARGIN: 30px;
 
 
@@ -263,9 +264,9 @@ article p {
 
 /* "Images" */
 .article-image { 
-    max-width: 100%; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
+    max-width: 150%; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
 	width: 80%;
-
+	
 	
 
 	/*Kuva voi olla koko artikkelin levyinen tai pienempi. 
@@ -283,7 +284,8 @@ footer {
 	/*Kannattaa laittaa footeriin vähintään padding 
 	ja ehkä eri taustaväri, jotta se erottuu hiukan.*/
 	padding: 50px;
+	background-color: #DAA6F2;
+	margin: 5px;
 	
 }
 
-Marginaalia ja paddingia että "Artikkelit ei olisi niin kiinni toisissaan"
