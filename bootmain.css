@@ -1,0 +1,29 @@
+html { 
+	
+	background: white; 
+	color: #4B414E ;
+	
+	/*Jos määrität html-tagissa fontteja, 
+	taustavärejä tai tekstin värejä,
+	samat määritykset tulevat kaikkiin sisällä oleviin
+	elementteihin. Näin voit määrittää esim. koko sivun 
+	fontit, värit ym. ja sitten muuttaa haluamissasi
+	elementeissä tyylin toiseksi.*/
+	
+font-family: 'Archivo Narrow', sans-serif;
+}
+
+body { 
+	
+	/*Kaiken sisällön ympärillä on body. 
+	Voit muuttaa myös bodyn taustaväriä tai
+	esim. lisätä paddingin, jotta elementit eivät 
+	olisi reunassa kiinni.*/
+	
+	/*Tällä koodilla voit tehdä niin, että yli 900px
+	leveässä näytössä body-tagi jää vain 900px leveäksi,
+	ja reunoille jää tyhjää. Voit muuttaa tätä miten haluat.*/
+	max-width: 1100px;
+	margin: auto; /*tämä keskittää body-tagin sivusuunnassa*/
+
+}
