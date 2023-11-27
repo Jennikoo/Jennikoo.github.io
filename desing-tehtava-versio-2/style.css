@@ -51,7 +51,7 @@ body {
 
 /*--------- HEADER ---------------------*/
 header {
-background: #DAA6F2 ;
+background: #E8E5DC ;
 }
 /*Header text on top of the menu*/
 header h1 { 
@@ -284,7 +284,7 @@ footer {
 	/*Kannattaa laittaa footeriin vähintään padding 
 	ja ehkä eri taustaväri, jotta se erottuu hiukan.*/
 	padding: 50px;
-	background-color: #DAA6F2;
+	background-color: #E8E5DC;
 	margin: 5px;
 	
 }
