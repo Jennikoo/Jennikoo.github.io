@@ -16,8 +16,8 @@ html {
 	/*koko sivun tausta on valkoinen.
 	Muuta haluamaksesi*/
 	
-	background: white; 
-	color: #4B414E ;
+	background: #51747D ; 
+	color: #070A34 ;
 	
 	/*Jos määrität html-tagissa fontteja, 
 	taustavärejä tai tekstin värejä,
@@ -64,6 +64,8 @@ header h1 {
 	niin näyttää tyylikkäämmältä */
 
 	/*Voit halutessasi myös esim. keskittää otsikon (text-align: center;)*/
+
+    
 
 	text-align: center;
  font-family: 'Tenor Sans', sans-serif;
@@ -150,8 +152,8 @@ header h1 {
 	*/
 	
 
-	color: #7C09B1; 
-	background: #DAA6F2;
+	color: #e8e5dc; 
+	background: #726E70;
 	padding: 5px, 10px;
 	border-radius: 4px;
 	position: absolute;
@@ -166,8 +168,8 @@ header h1 {
 	/*Tässä määritellään, nappi näyttää, 
 	kun kursori on sen päällä. Muuta paremmaksi */
 	
-	color: #DAA6F2;
-	Background: #7C09B1;
+	color: #726E70;
+	Background: #e8e5dc;
 	
 	
 	
@@ -187,7 +189,7 @@ main {
 	ja sitten artikkeleihin (ks. alla) esim. ,
 	jolloin artikkelit asettuvat vierekkäin.*/
 	
-background: #BEB7A4 ;
+background: #726E70 ;
 
 	
 	display: flex; 
