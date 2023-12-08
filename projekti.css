@@ -1,0 +1,28 @@
+#main-menu { 
+
+	list-style-type: none; 
+	
+	
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 50px; 
+  margin: 10px
+}
+  
+ #main-menu a {
+	 
+  text-decoration: none;
+  }
+  
+  #main-menu a:hover { 
+
+	color: white; 
+	background: #BEB7A4; 
+	
+	main {
+		
+	background: #d6ccc2 ;
+	display: flex; 
+	flex-wrap:wrap; 
+	justify-content: center;

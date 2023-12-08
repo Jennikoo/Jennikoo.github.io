@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projekti.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,500;1,400&family=Hedvig+Letters+Serif:opsz@12..24&family=Quicksand:wght@300;400&family=Tenor+Sans&display=swap" rel="stylesheet">
+  
+  
+  <title>PROJEKTI</title>
+
+  <style>
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #EDEDE9; /* Taustan väri */
+    }
+
+    header, nav, figure, aside, footer {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+    }
+
+	main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      margin: 20px;
+
+	 article {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #f8f8f8;
+
+    h1, h2, h3, p {
+      margin-bottom: 15px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Lisätyt ominaisuudet */
+    form {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+    }
+
+    /* Box-shadow-ominaisuus */
+    header, nav, main, article, figure, aside, footer {
+      box-shadow: 5px 5px 15px #888888;
+    }
+
+    /* Grid-asettelu */
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    /* Parallax-taustakuva */
+    header {
+      background: url('Tähän joku kuva') center/cover fixed;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+    <video autoplay muted loop>
+      <source src="mixkit-ethereal-texture-moving-30727-medium(2) (online-video-cutter.com) – kopio.mp4" type="video/mp4">
+    </video>
+</header>
+
+  <nav>
+    <ul id="main-menu">
+						<li><a href="">linkki</a></li>
+						<li><a href="">linkki2</a></li>
+						<li><a href="bootstrap.html">BootStrap</a></li>
+	</ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Article Title</h2>
+      <p>Article content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <figure>
+        <img src="J a p a n d i.png" alt="Example Image">
+        <figcaption>Image caption goes here.</figcaption>
+      </figure>
+      <aside>
+        <h3>Aside Title</h3>
+        <p>Aside content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </aside>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+
+  
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
