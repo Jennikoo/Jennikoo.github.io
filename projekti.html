@@ -1,28 +1,32 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="projekti.css" type="text/css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
 
   <title>PROJEKTI</title>
 
   <style>
-  
-    body, h1, h2, h3, p, ul, li, a {
+    /* Reset CSS */
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li,
+    a {
       margin: 0;
       padding: 0;
-	   color: #413F3D;
+      color: #413F3D;
     }
-	
-	
 
     body {
       font-family: Arial, sans-serif;
-	  
       line-height: 1.6;
       margin: 0;
       padding: 0;
@@ -30,13 +34,19 @@
       background-color: #EDEDE9; /* Taustan väri */
     }
 
-    nav, figure, footer {
+    nav,
+    figure,
+    footer {
       margin: 20px;
       padding: 20px;
       border: 1px solid #ccc;
       background-color: #f8f8f8;
-      box-shadow: 5px 5px 15px #888888; /* Box-shadow-ominaisuus */
-      border-radius: 10px; /* Pyöreät reunat */
+      box-shadow: 5px 5px 15px #888888;
+      border-radius: 10px;
+    }
+
+    figure {
+      background-color: #D4CFC9;
     }
 
     aside {
@@ -44,32 +54,37 @@
       padding: 20px;
       border: 1px solid #ccc;
       background-color: #F8F8F1;
-      box-shadow: 5px 5px 15px #888888; /* Box-shadow-ominaisuus */
-      border-radius: 10px; /* Pyöreät reunat */
+      box-shadow: 5px 5px 15px #888888;
+      border-radius: 10px;
     }
 
     main {
       margin: 20px;
-      max-width: 1200px; /* Rajoita sivun maksimileveyttä */
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-      text-align: center; /* Keskitä otsikot */
+      text-align: center;
     }
 
     article {
       border: 1px solid #ccc;
+      border-radius: 10px;
       padding: 20px;
       background-color: #e8e9e4;
-      margin-bottom: 40px; /* Lisätty tilaa artikkelien väliin */
+      margin-bottom: 40px;
     }
 
-    h1, h2, h3, p {
+    h1,
+    h2,
+    h3,
+    p {
       margin-bottom: 15px;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       font-weight: bold;
-      color: #333; /* Musta väri esimerkiksi */
+      color: #333;
     }
 
     img {
@@ -82,12 +97,12 @@
       height: auto;
     }
 
-    /* Lisätyt ominaisuudet */
     form {
       margin: 20px;
       padding: 20px;
       border: 1px solid #ccc;
       background-color: #f8f8f8;
+      border-radius: 10px;
     }
 
     /* Parallax-taustakuva */
@@ -97,12 +112,15 @@
 
     footer {
       margin-top: 20px;
+      background-color: #e8e9e4;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
     }
 
-    /* Uudet lisäykset */
     nav {
-      border-radius: 10px; /* Pyöreät reunat */
-      background-color: #d3d3d3; /* Vaaleampi tausta */
+      border-radius: 10px;
+      background-color: #d3d3d3;
       padding: 9px;
       display: flex;
       justify-content: space-between;
@@ -114,38 +132,37 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 50%; /* Tasaa linkit koko leveydelle */
+      width: 50%;
     }
 
     nav a {
       text-decoration: none;
       color: #333;
-      padding: 10px; /* Lisää tilaa linkkien ympärille */
-      border-radius: 5px; /* Pyöreät reunat linkkeihin */
-      transition: background-color 0.3s ease; /* Lisätty siirtymätaustaväri */
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #ccc; /* Vaihda taustaväri hiiren ollessa päällä */
+      background-color: #ccc;
     }
 
-    /* Search-palikka */
     .search {
       display: flex;
-      border-radius: 10px; /* Pyöreät reunat */
+      border-radius: 10px;
       overflow: hidden;
     }
 
-	.highlight {
-	  font-weight: bold;
-	  color: #BEB7A4; /* punainen väri esimerkiksi */
-	}
+    .highlight {
+      font-weight: bold;
+      color: #BEB7A4;
+    }
 
     .search input {
       flex: 1;
       padding: 10px;
       border: none;
-      border-radius: 1px; /* Poista oletuspyöreys */
+      border-radius: 1px;
     }
 
     .search button {
@@ -153,13 +170,13 @@
       color: #fff;
       padding: 10px;
       border: none;
-      border-radius: 10px; /* Pyöreät reunat nappulaan */
+      border-radius: 10px;
       cursor: pointer;
-      transition: background-color 0.3s ease; /* Lisätty siirtymätaustaväri */
+      transition: background-color 0.3s ease;
     }
 
     .search button:hover {
-      background-color: #555; /* Vaihda taustaväri hiiren ollessa päällä */
+      background-color: #555;
     }
 
     .image-grid {
@@ -172,17 +189,27 @@
       max-width: 100%;
       height: auto;
     }
-	
-	#form svg.send {
-	right: 0;
-	bottom: 50px;
-	}
 
-	
-	
+    #form svg.send {
+      right: 0;
+      bottom: 50px;
+    }
+
+    footer h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    /* Lisätty CSS media query */
+    @media only screen and (max-width: 600px) {
+      nav ul {
+        width: 100%; /* Muuta leveys 100%:iin näytön leveyden ollessa enintään 600px */
+      }
+    }
   </style>
 
 </head>
+
 <body>
 
   <header>
@@ -190,14 +217,12 @@
       <source src="mixkit-ethereal-texture-moving-30727-medium(2) (online-video-cutter.com) – kopio.mp4" type="video/mp4">
     </video>
   </header>
-  
-  
 
   <nav>
     <ul id="main-menu">
-	  <li><a href="bootstrap.html">Bootstrap</a></li>
-      <li><a href="#h4">Get inspired</a></li>
-	  <li><a href="#form">Form</a></li>
+      <li><a href="bootstrap.html">BOOTSTRAP</a></li>
+      <li><a href="#h4">GET  INSPIRED</a></li>
+      <li><a href="#form">S U B S C R I B E</a></li>
     </ul>
 
     <div class="search">
@@ -207,36 +232,67 @@
   </nav>
 
   <main>
+	
     <article>
-	<br>
-	<br>
-      <h2 id="h2">Everything You Need to Know About Japandi Interior Design</h2>
-     <br>
-	   <hr class="featurette-divider">
-	   <br>
-      <figure>
-        <img src="J a p a n d i.png" alt="Example Image">
-      </figure>
-	  
-	  <br>
-			  <p>A combination of Japanese and Scandinavian aesthetics, the look is <span class="highlight">calm, casual, and organic</span></p>
-		
-			 <p> Though centered on tranquil, minimalist, and functional interiors, the aesthetic often permeates into more than just the look of a home. 
-			 <br>
-			 This design style and principles truly supported <span class="highlight"> a healthy meaningful lifestyle. </span> 
-			 <br>
-			 It teaches us to find beauty in imperfection, form deep connections to the earth and nature, and enjoy the simple pleasures of life.   </p>
-	 
-		<br>
-	  <hr class="featurette-divider">
-	   <br>
-	   
+      <br>
+      <br>
+		<h2 id="h2">Everything You Need to Know About Japandi Interior Design</h2>
+      <br>
+		<hr class="featurette-divider">
+      <br>
+		<figure>
+			<img src="J a p a n d i.png" alt="Example Image">
+				<figcaption> Japandi is minimalist, earthy, and organic</figcaption>
+		</figure>
+
+      <br>
+		<p>A combination of Japanese and Scandinavian aesthetics, the look is <span class="highlight">calm, casual, and organic</span></p>
+
+		<p> Though centered on tranquil, minimalist, and functional interiors, the aesthetic often permeates into more than just the look of a home.
+        <br> This design style and principles truly supported <span class="highlight"> a healthy meaningful lifestyle. </span>
+        <br> It teaches us to find beauty in imperfection, form deep connections to the earth and nature, and enjoy the simple pleasures of life. </p>
+
+      <br>
+		<hr class="featurette-divider">
+      <br>
+
     </article>
-    
-    <article>
-      <h4 id="h4" style="text-align: center; font-size: 1.5em;">GET INSPIRED</h4> 
+
+	<aside>
+	<br>
+		<hr class="featurette-divider">
+	<br>
+      <h3 style="text-align: center; font-size: 1.5em;">JAPANDI INTERIORS</h3>
+	  <br>
       <hr class="featurette-divider">
       <br>
+      <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+          <img src="japandi_9.jpg" alt="Image 1" style="max-width: 50%; height: auto; margin-right: 10px;">
+          <p style="font-size: 1.2em;">
+            <strong>How Japanese and Scandinavian Styles Work Together</strong>
+            <br>
+            <br> If you're familiar with Scandi design, you're sure to have come across the notion of "hygge." This is the Scandinavian concept of coziness in design. Basically, hygge means that your home should be your sanctuary and provide a feeling of comfort every time you walk in the front door.</p>
+        </div>
+		
+		<br>
+		
+        <div style="display: flex; align-items: center; justify-content: center;">
+			<p style="font-size: 1.2em; margin-right: 10px;">
+					<strong>Incorporate Natural Materials</strong>
+				<br>
+				<br> Focus on natural materials such as unfinished woods or bamboo pieces that bring in the feeling of nature and simplistic beauty. I recommend using muted colors with hints of pale green or bringing plants and greenery into your home to give it a sense of outdoor living. </p>
+          <img src="japandi_8.jpg" alt="Image 2" style="max-width: 50%; height: auto;">
+        </div>
+      </div>
+    </aside>
+
+    <article>
+	<br>
+		<hr class="featurette-divider">
+			<h4 id="h4" style="text-align: center; font-size: 1.5em;">GET INSPIRED</h4>
+		<hr class="featurette-divider">
+	<br>
       <div class="image-grid">
         <img src="japandi_6.jpg" alt="Image 1">
         <img src="japandi_4.jpg" alt="Image 2">
@@ -244,45 +300,32 @@
         <img src="japandi_5.jpg" alt="Image 4">
       </div>
     </article>
-    
-    <aside>
-  <h3 style="text-align: center; font-size: 1.5em;">JAPANDI INTERIORS</h3>
-  <hr class="featurette-divider">
-  <br>
-  <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; margin-bottom: 20px;">
-    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
-      <img src="japandi_9.jpg" alt="Image 1" style="max-width: 100%; height: auto; margin-right: 10px;">
-      <p style="font-size: 1.2em;">
-	  
-	  <strong>How Japanese and Scandinavian Styles Work Together</strong>
-	  
-	  <br>
-	  <br>
-	  If you're familiar with Scandi design, you're sure to have come across the notion of "hygge." This is the Scandinavian concept of coziness in design. Basically, hygge means that your home should be your sanctuary and provide a feeling of comfort every time you walk in the front door.</p>
-    </div>
-    <div style="display: flex; align-items: center; justify-content: center;">
-      <p style="font-size: 1.2em; margin-right: 10px;">
-			<strong>Incorporate Natural Materials</strong>
-	  <br>
-	  <br>
-		Focus on natural materials such as unfinished woods or bamboo pieces that bring in the feeling of nature and simplistic beauty. I recommend using muted colors with hints of pale green or bringing plants and greenery into your home to give it a sense of outdoor living. </p>
-		<img src="japandi_8.jpg" alt="Image 2" style="max-width: 50%; height: auto;">
-    </div>
-  </div>
-</aside>
+
+		<aside>
+			<details>
+			<summary>Uudet tekniikat</summary>
+				<ol>Html-lomake</ol>
+				<ol>CSS transition</ol>
+				<ol>CSS-parallax-taustakuva</ol>
+			</details>
+		</aside>
+
   </main>
 
   <footer>
     <form id="form">
+	 <h3> S U B S C R I B E </h3>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name"><br><br>
       <label for="email">Email:</label>
       <input type="text" id="email" name="email"><br><br>
       <input type="submit" value="Submit">
     </form>
-	
-    <p>&copy; 2023 Your Website. All rights reserved.</p>
+
+    <p>&copy; 2023 Jennis Website. All rights reserved.</p>
+   
   </footer>
 
 </body>
+
 </html>
