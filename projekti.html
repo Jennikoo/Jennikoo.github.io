@@ -25,7 +25,17 @@
       background-color: #EDEDE9; /* Taustan väri */
     }
 
-    header, nav, figure, aside, footer {
+	nav, figure, footer {
+      margin: 20px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+      box-shadow: 5px 5px 15px #888888; /* Box-shadow-ominaisuus */
+      border-radius: 10px; /* Pyöreät reunat */
+    }
+	
+
+	aside {
       margin: 20px;
       padding: 20px;
       border: 1px solid #ccc;
@@ -35,9 +45,6 @@
     }
 
     main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
       margin: 20px;
       max-width: 1200px; /* Rajoita sivun maksimileveyttä */
       margin-left: auto;
@@ -48,6 +55,7 @@
       border: 1px solid #ccc;
       padding: 20px;
       background-color: #f8f8f8;
+      margin-bottom: 20px; /* Lisätty tilaa artikkelien väliin */
     }
 
     h1, h2, h3, p {
@@ -85,18 +93,23 @@
     nav {
       border-radius: 10px; /* Pyöreät reunat */
       background-color: #d3d3d3; /* Vaaleampi tausta */
-      padding: 10px;
+      padding: 9px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
+	.highlight {
+	  font-weight: bold;
+	  color: #BEB7A4; /* punainen väri esimerkiksi */
+	}
 
     nav ul {
       list-style: none;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%; /* Tasaa linkit koko leveydelle */
+      width: 50%; /* Tasaa linkit koko leveydelle */
     }
 
     nav a {
@@ -122,7 +135,7 @@
       flex: 1;
       padding: 10px;
       border: none;
-      border-radius: 0; /* Poista oletuspyöreys */
+      border-radius: 1px; /* Poista oletuspyöreys */
     }
 
     .search button {
@@ -130,8 +143,24 @@
       color: #fff;
       padding: 10px;
       border: none;
-      border-radius: 0; /* Poista oletuspyöreys */
+      border-radius: 10px; /* Pyöreät reunat nappulaan */
       cursor: pointer;
+      transition: background-color 0.3s ease; /* Lisätty siirtymätaustaväri */
+    }
+
+    .search button:hover {
+      background-color: #555; /* Vaihda taustaväri hiiren ollessa päällä */
+    }
+	
+	.image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .image-grid img {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 
@@ -144,10 +173,12 @@
     </video>
   </header>
 
+		
+
   <nav>
     <ul id="main-menu">
       <li><a href="#form">Form</a></li>
-      <li><a href="#h2">H2</a></li>
+      <li><a href="#h4">Get inspired</a></li>
       <li><a href="bootstrap.html">Bootstrap</a></li>
     </ul>
 
@@ -159,17 +190,43 @@
 
   <main>
     <article>
-      <h2 id="h2">Article Title</h2>
-      <p>Article content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <figure>
-        <img src="J a p a n d i.png" alt="Example Image">
-        <figcaption>Image caption goes here.</figcaption>
-      </figure>
-      <aside>
-        <h3>Aside Title</h3>
-        <p>Aside content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </aside>
+      <h2 id="h2">Japandi Style: Everything You Need to Know</h2>
+     
+		  <figure>
+			<img src="J a p a n d i.png" alt="Example Image">
+		  </figure>
+		  
+		  <p>A combination of Japanese and Scandinavian aesthetics, the look is <span class="highlight">calm, casual, and organic</span></p>
+	  
+	  <p>Though it may seem like a trendy buzzword, Japandi style in interiors is anything but a new aesthetic. 
+	  <br>
+	  A mashup of Japanese interiors and Scandinavian interiors the roots of these intertwined aesthetics run deep.</p>
+	  
+	 <p> Though centered on tranquil, minimalist, and functional interiors, the aesthetic often permeates into more than just the look of a home. 
+	 <br>
+	 This design style and principles truly supported <span class="highlight"> a healthy meaningful lifestyle. </span> 
+	 <br>
+	 It teaches us to find beauty in imperfection, form deep connections to the earth and nature, and enjoy the simple pleasures of life.   </p>
+	 
     </article>
+	
+	<article>
+		<h4 id="h4">GET INSPIRED</h4>
+		<hr class="featurette-divider">
+		<br>
+		<div class="image-grid">
+		  <img src="japandi_6.jpg" alt="Image 1">
+		  <img src="japandi_4.jpg" alt="Image 2">
+		  <img src="japandi_3.jpg" alt="Image 3">
+		  <img src="japandi_5.jpg" alt="Image 4">
+		</div>
+	</article>
+	
+	<aside>
+        <h3>Aside Title</h3>
+		<hr class="featurette-divider">
+        <p>Aside content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </aside>
   </main>
 
   <footer>
