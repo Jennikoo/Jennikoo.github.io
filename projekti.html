@@ -31,6 +31,7 @@
       border: 1px solid #ccc;
       background-color: #f8f8f8;
       box-shadow: 5px 5px 15px #888888; /* Box-shadow-ominaisuus */
+      border-radius: 10px; /* Pyöreät reunat */
     }
 
     main {
@@ -79,6 +80,59 @@
     footer {
       margin-top: 20px;
     }
+
+    /* Uudet lisäykset */
+    nav {
+      border-radius: 10px; /* Pyöreät reunat */
+      background-color: #d3d3d3; /* Vaaleampi tausta */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; /* Tasaa linkit koko leveydelle */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px; /* Lisää tilaa linkkien ympärille */
+      border-radius: 5px; /* Pyöreät reunat linkkeihin */
+      transition: background-color 0.3s ease; /* Lisätty siirtymätaustaväri */
+    }
+
+    nav a:hover {
+      background-color: #ccc; /* Vaihda taustaväri hiiren ollessa päällä */
+    }
+
+    /* Search-palikka */
+    .search {
+      display: flex;
+      border-radius: 10px; /* Pyöreät reunat */
+      overflow: hidden;
+    }
+
+    .search input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 0; /* Poista oletuspyöreys */
+    }
+
+    .search button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 0; /* Poista oletuspyöreys */
+      cursor: pointer;
+    }
   </style>
 
 </head>
@@ -92,15 +146,20 @@
 
   <nav>
     <ul id="main-menu">
-      <li><a href="">linkki</a></li>
-      <li><a href="">linkki2</a></li>
-      <li><a href="bootstrap.html">BootStrap</a></li>
+      <li><a href="#form">Form</a></li>
+      <li><a href="#h2">H2</a></li>
+      <li><a href="bootstrap.html">Bootstrap</a></li>
     </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button type="button">Hae</button>
+    </div>
   </nav>
 
   <main>
     <article>
-      <h2>Article Title</h2>
+      <h2 id="h2">Article Title</h2>
       <p>Article content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
       <figure>
         <img src="J a p a n d i.png" alt="Example Image">
@@ -111,13 +170,10 @@
         <p>Aside content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
       </aside>
     </article>
-
-    <!-- Voit lisätä muita artikkeleita samalla tavalla -->
-
   </main>
 
   <footer>
-    <form>
+    <form id="form">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name"><br><br>
       <label for="email">Email:</label>
