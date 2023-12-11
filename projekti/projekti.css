@@ -1,0 +1,234 @@
+	#main-menu { 
+	  list-style-type: none; 
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-around;
+	  height: 50px; 
+	  margin: 10px
+	}
+	  
+	 #main-menu a {	 
+	  text-decoration: none;
+	}
+	  
+	#main-menu a:hover { 
+		color: white; 
+		background: #BEB7A4; 
+	}
+
+	main {
+			
+		
+		display: flex; 
+		flex-wrap:wrap; 
+		justify-content: center;
+	}
+
+		
+	figure {
+		margin: 0;
+		padding: 0;
+	}
+
+	figure img {
+	  display: block;
+	  max-width: 100%;
+	  height: auto;
+	  margin: 0 auto; 
+	  border-radius: 10px; 
+	  overflow: hidden;
+	}
+
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li,
+    a {
+      margin: 0;
+      padding: 0;
+      color: #413F3D;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #EDEDE9; /* Taustan väri */
+    }
+
+    nav,
+    figure,
+    footer {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+      box-shadow: 5px 5px 15px #888888;
+      border-radius: 10px;
+    }
+
+    figure {
+      background-color: #D4CFC9;
+    }
+
+    aside {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #F8F8F1;
+      box-shadow: 5px 5px 15px #888888;
+      border-radius: 10px;
+    }
+
+    main {
+      margin: 20px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;	
+    }
+
+    article {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #e8e9e4;
+      margin-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-bottom: 15px;
+    }
+
+    h1,
+    h2 {
+      font-weight: bold;
+      color: #333;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    form {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+    }
+
+    /* Parallax-taustakuva */
+    body {
+      background: url('aallot.jpg') center/cover fixed;
+    }
+
+    footer {
+      margin-top: 20px;
+      background-color: #e8e9e4;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      border-radius: 10px;
+      background-color: #d3d3d3;
+      padding: 9px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ccc;
+    }
+
+    .search {
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #BEB7A4;
+    }
+
+    .search input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 1px;
+    }
+
+    .search button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .search button:hover {
+      background-color: #555;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .image-grid img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #form svg.send {
+      right: 0;
+      bottom: 50px;
+    }
+
+    footer h3 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+   
+    @media only screen and (max-width: 600px) {
+      nav ul {
+        width: 100%; 
+	}
